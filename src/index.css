@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.postits-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.postits-container > * {
+  margin: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+.PostIt {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.PostIt::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  background-color: #fff;
+  bottom: 0;
+  right: 0;
+  border: 10px solid black;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
 }
