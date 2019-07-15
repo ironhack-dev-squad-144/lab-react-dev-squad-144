@@ -6,7 +6,7 @@ export default function StudentInfo(props) {
   return (
     <tr>
       <td style={{color: color}}>{props.user.firstName}</td>
-      <td><img src={`https://www.countryflags.io/${props.user.country}/flat/64.png`} alt=""/></td>
+      <td><img src={`https://www.countryflags.io/${props.user.country}/flat/32.png`} alt=""/></td>
       <td>
         <a target="_blank" href={"https://github.com/"+props.user.githubUsername}>{props.user.githubUsername}</a>
       </td>

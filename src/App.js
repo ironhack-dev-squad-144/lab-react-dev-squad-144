@@ -14,11 +14,9 @@ function App() {
     <div className="App">
       <MainNavbar />
       <Container>
-        <h1>Students</h1>
+        <h1 id="students">Students</h1>
 
-        {/* {[<h1>A</h1>,<h1>B</h1>,<h1>C</h1>]} */}
-
-        <Table hover>
+        <Table hover size="sm">
           <thead>
             <tr>
               <th>Name</th>
@@ -32,7 +30,7 @@ function App() {
           </tbody>
         </Table>
 
-        <h1>Topics to Recap</h1>
+        <h1 id="topics-to-recap">Topics to Recap</h1>
         <div className="postits-container">
           <PostIt color="pink">Debugging Tool</PostIt>
           <PostIt color="tomato">APIs</PostIt>

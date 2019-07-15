@@ -24,33 +24,16 @@ function MainNavbar() {
 
   return (
     <Navbar color="primary" dark expand="md" className="mb-4">
-      <NavbarBrand href="/">Dev Squad #144</NavbarBrand>
+      <NavbarBrand href="#">Dev Squad #144</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink href="/components/">Components</NavLink>
+            <NavLink href="#students">Students</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <NavLink href="#topics-to-recap">Topics to Recap</NavLink>
           </NavItem>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-              Options
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>
-                Option 1
-              </DropdownItem>
-              <DropdownItem>
-                Option 2
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>
-                Reset
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
         </Nav>
       </Collapse>
     </Navbar>
